@@ -1,3 +1,12 @@
-image: ghcr.io/berriai/litellm:main-stable
-env:
-  - CUSTOM_OPENAI_API_BASE: "https://api.githubcopilot.com"
+services:
+  - type: web
+    name: litellm-proxy
+    env: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: LITELLM_MASTER_KEY
+        sync: false
+      - key: CUSTOM_OPENAI_API_KEY
+        sync: false
+      - key: CUSTOM_OPENAI_API_BASE
+        sync: false
