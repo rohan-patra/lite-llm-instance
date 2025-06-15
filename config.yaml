@@ -1,0 +1,121 @@
+model_list:
+  # GPT Models
+  - model_name: gpt-3.5-turbo
+    litellm_params:
+      model: gpt-3.5-turbo
+      api_base: os.environ/CUSTOM_OPENAI_API_BASE
+      api_key: os.environ/CUSTOM_OPENAI_API_KEY
+
+  - model_name: gpt-4o-mini
+    litellm_params:
+      model: gpt-4o-mini
+      api_base: os.environ/CUSTOM_OPENAI_API_BASE
+      api_key: os.environ/CUSTOM_OPENAI_API_KEY
+
+  - model_name: gpt-4
+    litellm_params:
+      model: gpt-4
+      api_base: os.environ/CUSTOM_OPENAI_API_BASE
+      api_key: os.environ/CUSTOM_OPENAI_API_KEY
+
+  - model_name: gpt-4-o-preview
+    litellm_params:
+      model: gpt-4-o-preview
+      api_base: os.environ/CUSTOM_OPENAI_API_BASE
+      api_key: os.environ/CUSTOM_OPENAI_API_KEY
+
+  - model_name: gpt-4o
+    litellm_params:
+      model: gpt-4o
+      api_base: os.environ/CUSTOM_OPENAI_API_BASE
+      api_key: os.environ/CUSTOM_OPENAI_API_KEY
+
+  - model_name: gpt-4.1
+    litellm_params:
+      model: gpt-4.1
+      api_base: os.environ/CUSTOM_OPENAI_API_BASE
+      api_key: os.environ/CUSTOM_OPENAI_API_KEY
+
+  # O-Series Models
+  - model_name: o1
+    litellm_params:
+      model: o1
+      api_base: os.environ/CUSTOM_OPENAI_API_BASE
+      api_key: os.environ/CUSTOM_OPENAI_API_KEY
+
+  - model_name: o3-mini
+    litellm_params:
+      model: o3-mini
+      api_base: os.environ/CUSTOM_OPENAI_API_BASE
+      api_key: os.environ/CUSTOM_OPENAI_API_KEY
+
+  - model_name: o4-mini
+    litellm_params:
+      model: o4-mini
+      api_base: os.environ/CUSTOM_OPENAI_API_BASE
+      api_key: os.environ/CUSTOM_OPENAI_API_KEY
+
+  # Embedding Models
+  - model_name: text-embedding-ada-002
+    litellm_params:
+      model: text-embedding-ada-002
+      api_base: os.environ/CUSTOM_OPENAI_API_BASE
+      api_key: os.environ/CUSTOM_OPENAI_API_KEY
+
+  - model_name: text-embedding-3-small
+    litellm_params:
+      model: text-embedding-3-small
+      api_base: os.environ/CUSTOM_OPENAI_API_BASE
+      api_key: os.environ/CUSTOM_OPENAI_API_KEY
+
+  - model_name: text-embedding-3-small-inference
+    litellm_params:
+      model: text-embedding-3-small-inference
+      api_base: os.environ/CUSTOM_OPENAI_API_BASE
+      api_key: os.environ/CUSTOM_OPENAI_API_KEY
+
+  # Copilot Models (formerly Claude)
+  - model_name: copilot-3.5-sonnet
+    litellm_params:
+      model: copilot-3.5-sonnet
+      api_base: os.environ/CUSTOM_OPENAI_API_BASE
+      api_key: os.environ/CUSTOM_OPENAI_API_KEY
+
+  - model_name: copilot-3.7-sonnet
+    litellm_params:
+      model: copilot-3.7-sonnet
+      api_base: os.environ/CUSTOM_OPENAI_API_BASE
+      api_key: os.environ/CUSTOM_OPENAI_API_KEY
+
+  - model_name: copilot-3.7-sonnet-thought
+    litellm_params:
+      model: copilot-3.7-sonnet-thought
+      api_base: os.environ/CUSTOM_OPENAI_API_BASE
+      api_key: os.environ/CUSTOM_OPENAI_API_KEY
+
+  # Copilot Models (formerly Gemini)
+  - model_name: copilot-2.0-flash-001
+    litellm_params:
+      model: copilot-2.0-flash-001
+      api_base: os.environ/CUSTOM_OPENAI_API_BASE
+      api_key: os.environ/CUSTOM_OPENAI_API_KEY
+
+  - model_name: copilot-2.5-pro
+    litellm_params:
+      model: copilot-2.5-pro
+      api_base: os.environ/CUSTOM_OPENAI_API_BASE
+      api_key: os.environ/CUSTOM_OPENAI_API_KEY
+
+  - model_name: copilot-2.5-pro-preview-05-06
+    litellm_params:
+      model: copilot-2.5-pro-preview-05-06
+      api_base: os.environ/CUSTOM_OPENAI_API_BASE
+      api_key: os.environ/CUSTOM_OPENAI_API_KEY
+
+general_settings:
+  master_key: os.environ/LITELLM_MASTER_KEY
+  timeout: 300
+
+litellm_settings:
+  drop_params: true
+  set_verbose: false

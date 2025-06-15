@@ -1,0 +1,3 @@
+image: ghcr.io/berriai/litellm:main-stable
+env:
+  - CUSTOM_OPENAI_API_BASE: "https://api.githubcopilot.com"
