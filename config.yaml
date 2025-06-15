@@ -20,7 +20,7 @@ model_list:
 
   - model_name: gpt-4-o-preview
     litellm_params:
-      model: gpt-4-o-preview
+      model: openai/gpt-4-o-preview
       api_base: os.environ/CUSTOM_OPENAI_API_BASE
       api_key: os.environ/CUSTOM_OPENAI_API_KEY
 
@@ -55,7 +55,7 @@ model_list:
       api_base: os.environ/CUSTOM_OPENAI_API_BASE
       api_key: os.environ/CUSTOM_OPENAI_API_KEY
 
-  # Embedding Models
+  # Standard Embedding Models
   - model_name: text-embedding-ada-002
     litellm_params:
       model: text-embedding-ada-002
@@ -68,47 +68,40 @@ model_list:
       api_base: os.environ/CUSTOM_OPENAI_API_BASE
       api_key: os.environ/CUSTOM_OPENAI_API_KEY
 
-  - model_name: text-embedding-3-small-inference
-    litellm_params:
-      model: text-embedding-3-small-inference
-      api_base: os.environ/CUSTOM_OPENAI_API_BASE
-      api_key: os.environ/CUSTOM_OPENAI_API_KEY
-
-  # Copilot Models (formerly Claude)
+  # Custom Models
   - model_name: copilot-3.5-sonnet
     litellm_params:
-      model: copilot-3.5-sonnet
+      model: openai/copilot-3.5-sonnet
       api_base: os.environ/CUSTOM_OPENAI_API_BASE
       api_key: os.environ/CUSTOM_OPENAI_API_KEY
 
   - model_name: copilot-3.7-sonnet
     litellm_params:
-      model: copilot-3.7-sonnet
+      model: openai/copilot-3.7-sonnet
       api_base: os.environ/CUSTOM_OPENAI_API_BASE
       api_key: os.environ/CUSTOM_OPENAI_API_KEY
 
   - model_name: copilot-3.7-sonnet-thought
     litellm_params:
-      model: copilot-3.7-sonnet-thought
+      model: openai/copilot-3.7-sonnet-thought
       api_base: os.environ/CUSTOM_OPENAI_API_BASE
       api_key: os.environ/CUSTOM_OPENAI_API_KEY
 
-  # Copilot Models (formerly Gemini)
   - model_name: copilot-2.0-flash-001
     litellm_params:
-      model: copilot-2.0-flash-001
+      model: openai/copilot-2.0-flash-001
       api_base: os.environ/CUSTOM_OPENAI_API_BASE
       api_key: os.environ/CUSTOM_OPENAI_API_KEY
 
   - model_name: copilot-2.5-pro
     litellm_params:
-      model: copilot-2.5-pro
+      model: openai/copilot-2.5-pro
       api_base: os.environ/CUSTOM_OPENAI_API_BASE
       api_key: os.environ/CUSTOM_OPENAI_API_KEY
 
   - model_name: copilot-2.5-pro-preview-05-06
     litellm_params:
-      model: copilot-2.5-pro-preview-05-06
+      model: openai/copilot-2.5-pro-preview-05-06
       api_base: os.environ/CUSTOM_OPENAI_API_BASE
       api_key: os.environ/CUSTOM_OPENAI_API_KEY
 
