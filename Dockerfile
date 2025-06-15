@@ -6,5 +6,6 @@ COPY config.yaml /app/config.yaml
 # Expose the port
 EXPOSE 4000
 
-# Start command
-CMD ["litellm", "--config", "/app/config.yaml", "--port", "4000", "--host", "0.0.0.0"]
+# Set entrypoint and command separately
+ENTRYPOINT ["litellm"]
+CMD ["--config", "/app/config.yaml", "--port", "4000", "--host", "0.0.0.0"]
