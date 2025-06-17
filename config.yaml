@@ -87,9 +87,9 @@ model_list:
       api_base: os.environ/CUSTOM_OPENAI_API_BASE
       api_key: os.environ/CUSTOM_OPENAI_API_KEY
 
-  - model_name: claude-3-7-sonnet-20250219-thinking
+  - model_name: claude-3-7-sonnet-20250219
     litellm_params:
-      model: openai/claude-3.7-sonnet-thought
+      model: openai/claude-3.7-sonnet
       api_base: os.environ/CUSTOM_OPENAI_API_BASE
       api_key: os.environ/CUSTOM_OPENAI_API_KEY
 
