@@ -11,30 +11,39 @@ model_list:
       model: gpt-4o-mini
       api_base: os.environ/CUSTOM_OPENAI_API_BASE
       api_key: os.environ/CUSTOM_OPENAI_API_KEY
+      supports_vision: True
+      extra_headers: { "Copilot-Vision-Request": "true" }
 
   - model_name: gpt-4
     litellm_params:
       model: gpt-4
       api_base: os.environ/CUSTOM_OPENAI_API_BASE
       api_key: os.environ/CUSTOM_OPENAI_API_KEY
+      supports_vision: True
+      extra_headers: { "Copilot-Vision-Request": "true" }
 
   - model_name: gpt-4-o-preview
     litellm_params:
       model: openai/gpt-4-o-preview
       api_base: os.environ/CUSTOM_OPENAI_API_BASE
       api_key: os.environ/CUSTOM_OPENAI_API_KEY
+      supports_vision: True
+      extra_headers: { "Copilot-Vision-Request": "true" }
 
   - model_name: gpt-4o
     litellm_params:
       model: gpt-4o
       api_base: os.environ/CUSTOM_OPENAI_API_BASE
       api_key: os.environ/CUSTOM_OPENAI_API_KEY
+      supports_vision: True
+      extra_headers: { "Copilot-Vision-Request": "true" }
 
   - model_name: gpt-4.1
     litellm_params:
       model: gpt-4.1
       api_base: os.environ/CUSTOM_OPENAI_API_BASE
       api_key: os.environ/CUSTOM_OPENAI_API_KEY
+      supports_vision: True
       extra_headers: { "Copilot-Vision-Request": "true" }
 
   # O-Series Models
@@ -43,18 +52,24 @@ model_list:
       model: o1
       api_base: os.environ/CUSTOM_OPENAI_API_BASE
       api_key: os.environ/CUSTOM_OPENAI_API_KEY
+      supports_vision: True
+      extra_headers: { "Copilot-Vision-Request": "true" }
 
   - model_name: o3-mini
     litellm_params:
       model: o3-mini
       api_base: os.environ/CUSTOM_OPENAI_API_BASE
       api_key: os.environ/CUSTOM_OPENAI_API_KEY
+      supports_vision: True
+      extra_headers: { "Copilot-Vision-Request": "true" }
 
   - model_name: o4-mini
     litellm_params:
       model: o4-mini
       api_base: os.environ/CUSTOM_OPENAI_API_BASE
       api_key: os.environ/CUSTOM_OPENAI_API_KEY
+      supports_vision: True
+      extra_headers: { "Copilot-Vision-Request": "true" }
 
   # Standard Embedding Models
   - model_name: text-embedding-ada-002
@@ -75,30 +90,39 @@ model_list:
       model: openai/claude-3.5-sonnet
       api_base: os.environ/CUSTOM_OPENAI_API_BASE
       api_key: os.environ/CUSTOM_OPENAI_API_KEY
+      supports_vision: True
+      extra_headers: { "Copilot-Vision-Request": "true" }
 
   - model_name: claude-3.7-sonnet
     litellm_params:
       model: openai/claude-3.7-sonnet
       api_base: os.environ/CUSTOM_OPENAI_API_BASE
       api_key: os.environ/CUSTOM_OPENAI_API_KEY
+      supports_vision: True
+      extra_headers: { "Copilot-Vision-Request": "true" }
 
   - model_name: claude-3.7-sonnet-thinking
     litellm_params:
       model: openai/claude-3.7-sonnet-thought
       api_base: os.environ/CUSTOM_OPENAI_API_BASE
       api_key: os.environ/CUSTOM_OPENAI_API_KEY
+      supports_vision: True
+      extra_headers: { "Copilot-Vision-Request": "true" }
 
   - model_name: claude-3-7-sonnet-20250219
     litellm_params:
       model: openai/claude-3.7-sonnet
       api_base: os.environ/CUSTOM_OPENAI_API_BASE
       api_key: os.environ/CUSTOM_OPENAI_API_KEY
+      supports_vision: True
+      extra_headers: { "Copilot-Vision-Request": "true" }
 
   - model_name: claude-sonnet-4
     litellm_params:
       model: openai/claude-sonnet-4
       api_base: os.environ/CUSTOM_OPENAI_API_BASE
       api_key: os.environ/CUSTOM_OPENAI_API_KEY
+      supports_vision: True
       extra_headers: { "Copilot-Vision-Request": "true" }
 
   # Gemini Models
@@ -107,24 +131,32 @@ model_list:
       model: openai/gemini-2.0-flash-001
       api_base: os.environ/CUSTOM_OPENAI_API_BASE
       api_key: os.environ/CUSTOM_OPENAI_API_KEY
+      supports_vision: True
+      extra_headers: { "Copilot-Vision-Request": "true" }
 
   - model_name: gemini-2.5-pro
     litellm_params:
       model: openai/gemini-2.5-pro
       api_base: os.environ/CUSTOM_OPENAI_API_BASE
       api_key: os.environ/CUSTOM_OPENAI_API_KEY
+      supports_vision: True
+      extra_headers: { "Copilot-Vision-Request": "true" }
 
   - model_name: gemini-2.5-pro-preview-05-06
     litellm_params:
       model: openai/gemini-2.5-pro
       api_base: os.environ/CUSTOM_OPENAI_API_BASE
       api_key: os.environ/CUSTOM_OPENAI_API_KEY
+      supports_vision: True
+      extra_headers: { "Copilot-Vision-Request": "true" }
 
   - model_name: gemini-2.5-pro-exp-05-06
     litellm_params:
       model: openai/gemini-2.5-pro-exp-05-06
       api_base: os.environ/CUSTOM_OPENAI_API_BASE
       api_key: os.environ/CUSTOM_OPENAI_API_KEY
+      supports_vision: True
+      extra_headers: { "Copilot-Vision-Request": "true" }
 
   # Custom Models
   # - model_name: copilot-3.5-sonnet
